@@ -24,10 +24,10 @@ def download_model(model_name, pretrained):
             pretrained=pretrained
         )
         
-        logger.info(f"✓ {model_name} downloaded and cached successfully!")
+        logger.info(f"{model_name} downloaded and cached successfully!")
         return True
     except Exception as e:
-        logger.error(f"✗ Failed to download {model_name}: {e}")
+        logger.error(f"Failed to download {model_name}: {e}")
         return False
 
 if __name__ == "__main__":

@@ -162,7 +162,7 @@ def generate_story(input_path, output_path, model_selection, pairing_strategy, w
             logger.info("Generating video")
             video_path = gen.generate_video(ordered_slides)
             
-        status += f"\n✅ Done! Generated story with {len(ordered_slides)} slides.\n"
+        status += f"\nDone! Generated story with {len(ordered_slides)} slides.\n"
         status += f"JSON: {json_path}\n"
         status += f"CSV: {csv_path}\n"
         if video_path:
@@ -172,14 +172,14 @@ def generate_story(input_path, output_path, model_selection, pairing_strategy, w
         return status, json_path, csv_path, video_path
         
     except Exception as e:
-        error_msg = f"❌ Error: {str(e)}\n\nSee app.log for full details."
+        error_msg = f"Error: {str(e)}\n\nSee app.log for full details."
         logger.error(f"Error during generation: {e}")
         logger.error(traceback.format_exc())
         return error_msg, None, None, None
 
 # UI Definition
 with gr.Blocks(title="Tag-Aware Photo Story Generator") as app:
-    gr.Markdown("# 📸 Tag-Aware Photo Story Generator")
+    gr.Markdown("# Tag-Aware Photo Story Generator")
     gr.Markdown("Transform your photo collection into a cinematic story.")
     
     with gr.Row():

@@ -59,9 +59,9 @@ try:
             print(f"   Embedding shape: {embeddings[0].shape}")
             print(f"   Tags: {tags[0][:5]}...")  # First 5 tags
     
-    print("\n✅ Test successful!")
+    print("\nTest successful!")
     
 except Exception as e:
-    print(f"\n❌ ERROR: {e}")
+    print(f"\nERROR: {e}")
     print("\nFull traceback:")
     traceback.print_exc()
