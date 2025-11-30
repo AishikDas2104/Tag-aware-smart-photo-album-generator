@@ -1,0 +1,63 @@
+# Tag-Aware Photo Story Generator - Dependencies
+
+# ============================================
+# Core Image Processing
+# ============================================
+Pillow>=10.0.0
+piexif>=1.1.3
+imagehash>=4.3.1
+opencv-python>=4.8.0
+
+# ============================================
+# AI Models & Deep Learning
+# ============================================
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+open-clip-torch>=2.20.0
+
+# ============================================
+# Indexing & Similarity Search
+# ============================================
+faiss-cpu>=1.7.4
+# Note: Use faiss-gpu if you have CUDA-enabled GPU
+numpy>=1.24.0
+scipy>=1.11.0
+
+# ============================================
+# Output Generation & Visualization
+# ============================================
+moviepy>=1.0.3
+ffmpeg-python>=0.2.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.3.0
+plotly>=5.17.0
+
+# ============================================
+# Web UI
+# ============================================
+gradio>=4.0.0
+
+# ============================================
+# Data Processing & Utilities
+# ============================================
+pandas>=2.0.0
+tqdm>=4.65.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# ============================================
+# Testing (Development)
+# ============================================
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-timeout>=2.1.0
+black>=23.7.0
+flake8>=6.1.0
+
+# ============================================
+# Optional Dependencies (Advanced Features)
+# ============================================
+# insightface>=0.7.3  # Face detection & recognition
+# ultralytics>=8.0.0  # YOLO object detection
